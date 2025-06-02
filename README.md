@@ -8,6 +8,9 @@ Contenerización de una Aplicación Backend con PostgreSQL y pgAdmin utilizando 
 ![image](https://github.com/user-attachments/assets/7c76ca17-fadc-4d3b-9504-8059b5805926)
 
 3. Tiempo de duración
+
+![image](https://github.com/user-attachments/assets/f19542cb-6a26-4bc8-8f64-65a13fa7b535)
+
 El tiempo estimado para completar el despliegue fue de 200 minutos.
 
 4. Fundamentos
@@ -26,6 +29,7 @@ Las imágenes Docker pueden volverse muy pesadas si incluyen dependencias innece
 ![image](https://github.com/user-attachments/assets/6cc810da-ed05-48f4-b661-2a9e4b48743e)
 
 4. Conocimientos previos
+
 Para realizar el despliegue, es necesario conocer:
 Fundamentos de Spring Boot.
 Comandos básicos de Docker.
@@ -34,6 +38,7 @@ Uso de .env para definir variables de configuración.
 Fundamentos de bases de datos relacionales y PostgreSQL.
 
 5. Objetivos a alcanzar
+
 Contenerizar la aplicación backend mediante Docker.
 Implementar multi-stage build para optimizar la imagen.
 Configurar servicios de base de datos y administración con Docker Compose.
@@ -42,34 +47,44 @@ Verificar la conectividad entre el backend y PostgreSQL.
 Validar el acceso a la base de datos desde pgAdmin.
 
 6. Equipo necesario
+
 Computador con Docker instalado.
 Navegador web para acceder a pgAdmin.
 Conexión a internet para obtener imágenes y documentación.
 
 7. Material de apoyo
+
 Documentación oficial de Docker.
 Guía de Docker Cheatsheet.
 Repositorio del proyecto backend.
 Videos tutoriales para referencia.
 
 8. Procedimiento
+
 Pasos
+
 Clonar el repositorio del proyecto backend.
+----
 ![image](https://github.com/user-attachments/assets/f6bc9c0e-bada-476e-93cd-ee301f6b01d4)
-
+----
 Crear archivo .env con las variables necesarias.
+----
 ![image](https://github.com/user-attachments/assets/a2f04274-c07b-4ebd-a4aa-0f1a92e0f476)
-
+----
 Definir el archivo Dockerfile
+----
 ![image](https://github.com/user-attachments/assets/36036b20-86ec-40a4-8e31-8c78a97d7c55)
-
+----
 Configurar docker-compose.yml para PostgreSQL y pgAdmin.
+----
 ![image](https://github.com/user-attachments/assets/3a84b2f7-1ded-4e00-8f03-bb50b08ef8ca)
-
+----
 Levantar los contenedores con docker-compose up --build -d.
+----
 ![image](https://github.com/user-attachments/assets/27e630d2-8b39-4265-bf9b-db36c9a46d33)
-
+-----
 Acceder a pgAdmin y conectar con PostgreSQL correctamente.
+----
 ![image](https://github.com/user-attachments/assets/6022aced-4825-4265-830c-ea1a0b04ea45)
 ---
 ![image](https://github.com/user-attachments/assets/27a64138-4e5d-48e7-9231-4fd36f83bfa6)
@@ -81,6 +96,7 @@ Demostración en el localhost
 
 
 9. Resultados esperados
+
 La aplicación backend ha sido contenerizada con éxito usando Dockerfile y multi-stage build.
 Se generó una imagen ligera y optimizada.
 Se ejecutó Docker Compose para levantar los servicios PostgreSQL y pgAdmin.
@@ -89,6 +105,7 @@ La conexión desde pgAdmin fue establecida, garantizando persistencia y acceso a
 Capturas de pantalla evidencian el proceso desde la clonación hasta el despliegue exitoso.
 
 10. Bibliografía
+
 Documentación oficial de Docker sobre Multi-stage Builds: Explica cómo optimizar imágenes Docker utilizando múltiples etapas en el Dockerfile.
 Stack Overflow - Cómo dividir un Dockerfile en múltiples archivos: Discusión sobre cómo estructurar Dockerfiles en proyectos complejos.
 KeepCoding - ¿Qué es Docker Multi-stage Build?: Explicación detallada sobre el concepto y su evolución en Docker.
