@@ -1,7 +1,9 @@
-![image](https://github.com/user-attachments/assets/c1a2be2b-d87b-4723-8437-c349215c1494)# Despliegue backend con base datos local
+# Despliegue backend con base datos local
 
 TAS8 - Despliegue backend con base de datos local
-
+----
+![image](https://github.com/user-attachments/assets/c1a2be2b-d87b-4723-8437-c349215c1494)
+----
 1. Título
 Contenerización de una Aplicación Backend con PostgreSQL y pgAdmin utilizando Docker
 
