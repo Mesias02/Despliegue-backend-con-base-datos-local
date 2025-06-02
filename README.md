@@ -1,19 +1,17 @@
 # Despliegue backend con base datos local
 
-TAS8 - Despliegue backend con base de datos local
+## TAS8 - Despliegue backend con base de datos local
 
-1. Título
+### 1. Título
 Contenerización de una Aplicación Backend con PostgreSQL y pgAdmin utilizando Docker
 
 ![image](https://github.com/user-attachments/assets/7c76ca17-fadc-4d3b-9504-8059b5805926)
 
-3. Tiempo de duración
-
-![image](https://github.com/user-attachments/assets/f19542cb-6a26-4bc8-8f64-65a13fa7b535)
+### 2. Tiempo de duración
 
 El tiempo estimado para completar el despliegue fue de 200 minutos.
 
-4. Fundamentos
+### 3. Fundamentos
 Dockerfile
 Un Dockerfile define los pasos para construir una imagen Docker. Este archivo de texto contiene una serie de instrucciones que permiten transformar una imagen base en una imagen personalizada para la aplicación backend.
 
@@ -28,7 +26,7 @@ Las imágenes Docker pueden volverse muy pesadas si incluyen dependencias innece
 
 ![image](https://github.com/user-attachments/assets/6cc810da-ed05-48f4-b661-2a9e4b48743e)
 
-4. Conocimientos previos
+### 4. Conocimientos previos
 
 Para realizar el despliegue, es necesario conocer:
 Fundamentos de Spring Boot.
@@ -37,7 +35,7 @@ Escritura y lectura de archivos Dockerfile.
 Uso de .env para definir variables de configuración.
 Fundamentos de bases de datos relacionales y PostgreSQL.
 
-5. Objetivos a alcanzar
+### 5. Objetivos a alcanzar
 
 Contenerizar la aplicación backend mediante Docker.
 Implementar multi-stage build para optimizar la imagen.
@@ -46,20 +44,20 @@ Gestionar variables de entorno con un archivo .env.
 Verificar la conectividad entre el backend y PostgreSQL.
 Validar el acceso a la base de datos desde pgAdmin.
 
-6. Equipo necesario
+### 6. Equipo necesario
 
 Computador con Docker instalado.
 Navegador web para acceder a pgAdmin.
 Conexión a internet para obtener imágenes y documentación.
 
-7. Material de apoyo
+### 7. Material de apoyo
 
 Documentación oficial de Docker.
 Guía de Docker Cheatsheet.
 Repositorio del proyecto backend.
 Videos tutoriales para referencia.
 
-8. Procedimiento
+### 8. Procedimiento
 
 Pasos
 
@@ -95,7 +93,7 @@ Demostración en el localhost
 ![image](https://github.com/user-attachments/assets/f5a61d96-9115-49c6-87c9-621f0f177712)
 
 
-9. Resultados esperados
+### 9. Resultados esperados
 
 La aplicación backend ha sido contenerizada con éxito usando Dockerfile y multi-stage build.
 Se generó una imagen ligera y optimizada.
@@ -104,7 +102,7 @@ Se verificó la correcta comunicación entre la aplicación y la base de datos c
 La conexión desde pgAdmin fue establecida, garantizando persistencia y acceso a la base de datos.
 Capturas de pantalla evidencian el proceso desde la clonación hasta el despliegue exitoso.
 
-10. Bibliografía
+### 10. Bibliografía
 
 Documentación oficial de Docker sobre Multi-stage Builds: Explica cómo optimizar imágenes Docker utilizando múltiples etapas en el Dockerfile.
 Stack Overflow - Cómo dividir un Dockerfile en múltiples archivos: Discusión sobre cómo estructurar Dockerfiles en proyectos complejos.
