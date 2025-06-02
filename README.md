@@ -29,32 +29,47 @@ Las imágenes Docker pueden volverse muy pesadas si incluyen dependencias innece
 ### 4. Conocimientos previos
 
 Para realizar el despliegue, es necesario conocer:
+
 Fundamentos de Spring Boot.
+
 Comandos básicos de Docker.
+
 Escritura y lectura de archivos Dockerfile.
+
 Uso de .env para definir variables de configuración.
+
 Fundamentos de bases de datos relacionales y PostgreSQL.
 
 ### 5. Objetivos a alcanzar
 
 Contenerizar la aplicación backend mediante Docker.
+
 Implementar multi-stage build para optimizar la imagen.
+
 Configurar servicios de base de datos y administración con Docker Compose.
+
 Gestionar variables de entorno con un archivo .env.
+
 Verificar la conectividad entre el backend y PostgreSQL.
+
 Validar el acceso a la base de datos desde pgAdmin.
 
 ### 6. Equipo necesario
 
 Computador con Docker instalado.
+
 Navegador web para acceder a pgAdmin.
+
 Conexión a internet para obtener imágenes y documentación.
 
 ### 7. Material de apoyo
 
 Documentación oficial de Docker.
+
 Guía de Docker Cheatsheet.
+
 Repositorio del proyecto backend.
+
 Videos tutoriales para referencia.
 
 ### 8. Procedimiento
@@ -96,10 +111,15 @@ Demostración en el localhost
 ### 9. Resultados esperados
 
 La aplicación backend ha sido contenerizada con éxito usando Dockerfile y multi-stage build.
+
 Se generó una imagen ligera y optimizada.
+
 Se ejecutó Docker Compose para levantar los servicios PostgreSQL y pgAdmin.
+
 Se verificó la correcta comunicación entre la aplicación y la base de datos con logs de Spring Boot.
+
 La conexión desde pgAdmin fue establecida, garantizando persistencia y acceso a la base de datos.
+
 Capturas de pantalla evidencian el proceso desde la clonación hasta el despliegue exitoso.
 
 ### 10. Bibliografía
