@@ -13,11 +13,13 @@ El tiempo estimado para completar el despliegue fue de 200 minutos.
 
 ### 3. Fundamentos
 Dockerfile
-Un Dockerfile define los pasos para construir una imagen Docker. Este archivo de texto contiene una serie de instrucciones que permiten transformar una imagen base en una imagen personalizada para la aplicación backend.
+Un Dockerfile define los pasos para construir una imagen Docker. Es un archivo de texto que contiene un conjunto de instrucciones utilizadas para construir una imagen Docker. Este archivo permite personalizar el entorno de ejecución de la aplicación, partiendo de una imagen base y agregando las dependencias necesarias para su ejecución. A través del comando docker build, estas instrucciones se ejecutan en orden, generando una imagen compuesta por múltiples capas, cada una representando un paso del proceso de construcción (Docker Docs, n.d.).
 
 ![image](https://github.com/user-attachments/assets/aea108aa-47f7-49a3-9675-5889d42587c9)
 
-La construcción de una imagen se realiza con docker build, donde se agregan capas progresivamente. Para optimizar este proceso, se utiliza multi-stage build, lo que permite generar imágenes más ligeras y seguras.
+La técnica de multi-stage build permite definir múltiples etapas dentro de un mismo Dockerfile, separando el entorno de construcción del entorno de ejecución. Esto es especialmente útil para reducir el tamaño de la imagen final y eliminar herramientas innecesarias o archivos temporales. Con este enfoque, los artefactos compilados en una etapa anterior se copian a una imagen limpia de producción, mejorando la seguridad y eficiencia del contenedor (Merkel, 2014; Docker Docs, n.d.).
+
+Por ejemplo, al construir una aplicación con Spring Boot, se puede usar una imagen con Java y Maven para compilar el proyecto y luego copiar el archivo .jar resultante a una imagen basada solo en Java, lista para producción.
 
 ![image](https://github.com/user-attachments/assets/6530dbf8-7e68-40e2-bf70-84bd79c21658)
 
@@ -127,3 +129,9 @@ Capturas de pantalla evidencian el proceso desde la clonación hasta el desplieg
 Documentación oficial de Docker sobre Multi-stage Builds: Explica cómo optimizar imágenes Docker utilizando múltiples etapas en el Dockerfile.
 Stack Overflow - Cómo dividir un Dockerfile en múltiples archivos: Discusión sobre cómo estructurar Dockerfiles en proyectos complejos.
 KeepCoding - ¿Qué es Docker Multi-stage Build?: Explicación detallada sobre el concepto y su evolución en Docker.
+
+Docker Docs. (n.d.). Use multi-stage builds. Docker Documentation. Recuperado el 15 de junio de 2025, de https://docs.docker.com/develop/develop-images/multistage-build/
+
+Merkel, D. (2014). Docker: Lightweight Linux containers for consistent development and deployment. Linux Journal, 2014(239). https://www.linuxjournal.com/content/docker-lightweight-linux-containers-consistent-development-and-deployment
+
+
